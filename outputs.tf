@@ -1,7 +1,7 @@
-output "rgname" {
-  value = azurerm_resource_group.rg.name
+output "resource_group_name" {
+  value = module.resource_group.resource_group_name
 }
 
-output "storage_name" {
-  value = azurerm_storage_account.sa.name
+output "storage_account_name" {
+  value = module.storage_account.storage_account_name
 }
